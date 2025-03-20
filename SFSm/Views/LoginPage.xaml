@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SFSm.Views.LoginPage"
+             Title="">
+
+    <Grid>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <StackLayout Spacing="0" HorizontalOptions="Center">
+                <Label Text="SFS INPLAY" FontSize="30" HorizontalOptions="Center" FontAttributes="Bold" />
+                <Label Text="(Main Office)" FontSize="25" Padding="0" HorizontalOptions="Center" FontAttributes="Bold" />
+            </StackLayout>
+            <Entry Placeholder="Enter Username" Text="{Binding Username}" />
+            <Entry Placeholder="Enter Password" IsPassword="True" Text="{Binding Password}" />
+            <Button Text="Login" Command="{Binding LoginCommand}" BackgroundColor="#05376C"/>
+            <Image Source="aircon.png" HeightRequest="100" WidthRequest="100">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding SyncCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
+        </VerticalStackLayout>
+
+        <ContentView IsVisible="{Binding IsLoading}" 
+                     BackgroundColor="Black" 
+                     Opacity="0.8"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     AbsoluteLayout.LayoutFlags="All">
+
+            <StackLayout VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        Spacing="10">
+
+                <ActivityIndicator IsRunning="{Binding IsLoading}" 
+                                    Color="White"
+                                    WidthRequest="50" 
+                                    HeightRequest="50" />
+
+                <Label Text="{Binding LoadingMessage}" 
+                        TextColor="White" 
+                        FontSize="18"
+                        HorizontalOptions="Center" />
+            </StackLayout>
+        </ContentView>
+
+        <Label Text="{Binding AppVersion}" 
+               FontSize="12" 
+               TextColor="Gray"
+               HorizontalOptions="End" 
+               VerticalOptions="End"
+               Margin="10" />
+
+    </Grid>
+</ContentPage>

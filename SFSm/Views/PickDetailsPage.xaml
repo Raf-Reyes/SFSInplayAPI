@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SFSm.Views.PickDetailsPage"
+             Title="">
+
+    <Grid AbsoluteLayout.LayoutBounds="0,0,1,1"
+      AbsoluteLayout.LayoutFlags="All"
+      RowDefinitions="100, Auto, *"
+      Padding="10"
+      RowSpacing="10"
+      ColumnSpacing="10">
+
+        <!-- Top Bar -->
+        <BoxView Grid.Row="0" 
+             BackgroundColor="#05376C" CornerRadius="5" />
+
+        <Label Grid.Row="0"
+           Text="{Binding Refsono, StringFormat='SO No: {0}'}"
+           FontAttributes="Bold"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           FontSize="24"
+           TextColor="white"/>
+
+        <!-- So Number List Label -->
+        <Label Text="SO Item List"
+           Grid.Row="1"
+           HorizontalOptions="Start"
+           VerticalOptions="Center"
+           FontSize="13"
+           TextColor="gray"/>
+
+        <CollectionView Grid.Row="2" ItemsSource="{Binding PickList}" SelectionMode="Single" >
+            <CollectionView.EmptyView>
+                <Label Text="No Records Found" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   TextColor="Gray" 
+                   FontSize="16" />
+
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="LightGray" CornerRadius="5" HasShadow="False" InputTransparent="True" Margin="5">
+                        <StackLayout Spacing="5">
+                            <!-- Main Row -->
+                            <VerticalStackLayout Spacing="5">
+                                <Label Text="{Binding Description}"
+                                       FontSize="16"
+                                       FontAttributes="Bold"
+                                       TextColor="Black"
+                                       HorizontalOptions="FillAndExpand"
+                                       LineBreakMode="WordWrap"/>
+                                
+                                <Label Text="{Binding Qty, StringFormat='({0:F2})'}"
+                                        FontSize="14"
+                                        TextColor="Black"/>
+
+                                <Label Text="{Binding Barcode}"
+                                        FontSize="14"
+                                        TextColor="Black"
+                                       IsVisible="True"/>
+
+                                <Label Text="Pick List"
+                                        FontSize="14"
+                                        FontAttributes="Bold"
+                                        TextColor="Blue"
+                                        Padding="0,5,0,5"/>
+
+                                <Label Text="{Binding Serialno}"
+                                       FontSize="14"
+                                       TextColor="Black"/>
+                            </VerticalStackLayout>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+    
+</ContentPage>

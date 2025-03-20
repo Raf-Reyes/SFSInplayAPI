@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SFSm.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SFSm"
+    xmlns:myLogin ="clr-namespace:SFSm.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title=""
+    x:Name="MyAppShell">
+
+    <ShellContent Route="Login" ContentTemplate="{DataTemplate myLogin:LoginPage}" FlyoutItemIsVisible="False"/>
+
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="#05376C" Padding="20" HorizontalOptions="Fill">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Logo Image -->
+            <Image Grid.Row="0" Source="aircon.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" />
+
+            <!-- Name Text -->
+            <Label Grid.Row="1" Text="St. Francis Square Group of Companies"
+               FontSize="18" FontAttributes="Bold" 
+               HorizontalOptions="Center" VerticalOptions="Center"
+               TextColor="#FFFFFF" />
+        </Grid>
+    </Shell.FlyoutHeader>
+    
+    <ShellContent
+    Title="Dashboard"
+    ContentTemplate="{DataTemplate myLogin:DashboardPage}"
+    Route="Dashboard"
+    Icon="dashboard.png"
+    FlyoutItemIsVisible="True"/>
+    
+    <ShellContent
+    Title="Pick Serial Number"
+    ContentTemplate="{DataTemplate myLogin:SOPickPage}"
+    Route="SOPick"
+    Icon="scan.png"
+    FlyoutItemIsVisible="True"/>
+    
+    <ShellContent
+    Title="Picked SO List"
+    ContentTemplate="{DataTemplate myLogin:SOPickListPage}"
+    Route="SOList"
+    Icon="scan.png"
+    FlyoutItemIsVisible="False"/>
+
+    <ShellContent
+    Title="Download SO for Picking"
+    ContentTemplate="{DataTemplate myLogin:SODownloadPage}"
+    Route="SODownload"
+    Icon="downloadd.png"
+    FlyoutItemIsVisible="True"/>
+
+    <ShellContent
+    Title="Upload Picked SO"
+    ContentTemplate="{DataTemplate myLogin:SOReleasePage}"
+    Route="SORelease"
+    Icon="uploadd.png"
+    FlyoutItemIsVisible="True"/>
+
+    <ShellContent   
+    Title="Sign Out"
+    ContentTemplate="{DataTemplate myLogin:LoginPage}"
+    Route="SignOut"
+    Icon="logout.png"
+    FlyoutItemIsVisible="True"/>
+
+    <ShellContent 
+    Route="SODetails"
+    ContentTemplate="{DataTemplate myLogin:SODetailsPage}"
+    FlyoutItemIsVisible="False"/>
+
+</Shell>

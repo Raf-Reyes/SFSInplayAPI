@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SFSm.Views.SOReleasePage"
+             Title="">
+
+    <!-- Root AbsoluteLayout -->
+    <AbsoluteLayout>
+
+        <!-- Main Grid -->
+        <Grid AbsoluteLayout.LayoutBounds="0,0,1,1"
+          AbsoluteLayout.LayoutFlags="All"
+          RowDefinitions="100, Auto, *"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10">
+
+            <!-- Top Bar -->
+            <BoxView Grid.Row="0" 
+                 BackgroundColor="#05376C" CornerRadius="5" />
+
+            <Label Grid.Row="0"
+               Text="Upload Picked SO"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="24"
+               TextColor="white"/>
+
+            <!-- So Number List Label -->
+            <Label Text="SO Pick List"
+               Grid.Row="1"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontSize="13"
+               TextColor="gray"/>
+
+            <CollectionView Grid.Row="2" ItemsSource="{Binding PickList}" SelectionMode="Single">
+                <CollectionView.EmptyView>
+                    <Label Text="No Records Found" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center" 
+                       TextColor="Gray" 
+                       FontSize="16" />
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Remove" BackgroundColor="Red" Invoked="SwipeItem_Invoked" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <StackLayout>
+
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                                </StackLayout.GestureRecognizers>
+
+                                <Border BackgroundColor="LightGray" StrokeThickness="1" Padding="10" StrokeShape="RoundRectangle 10,10,10,10" Margin="5">
+                                    <Label Text="{Binding Refsono}"
+                                            FontSize="14"
+                                            VerticalOptions="Center"/>
+                                </Border>
+                            </StackLayout>
+
+                        </SwipeView>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <ContentView IsVisible="{Binding IsLoading}" 
+                     BackgroundColor="Black" 
+                     Opacity="0.8"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     AbsoluteLayout.LayoutFlags="All">
+
+            <StackLayout VerticalOptions="Center" 
+                         HorizontalOptions="Center"
+                         Spacing="10">
+
+                <ActivityIndicator IsRunning="{Binding IsLoading}" 
+                                   Color="White"
+                                   WidthRequest="50" 
+                                   HeightRequest="50" />
+
+                <Label Text="{Binding LoadingMessage}" 
+                       TextColor="White" 
+                       FontSize="18"
+                       HorizontalOptions="Center" />
+            </StackLayout>
+        </ContentView>
+
+        <!-- Floating ImageButton -->
+        <ImageButton Source="upload.png"
+                 BackgroundColor="#05376C"
+                 WidthRequest="60"
+                 HeightRequest="60"
+                 Padding="10"
+                 CornerRadius="50"
+                 AbsoluteLayout.LayoutBounds="1,1,70,70"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 Command="{Binding UploadCommand}"/>
+    </AbsoluteLayout>
+</ContentPage>

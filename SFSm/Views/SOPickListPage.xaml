@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SFSm.Views.SOPickListPage"
+             Title="SO LIST">
+    
+    <Grid RowDefinitions="100, Auto, Auto, *"
+      ColumnDefinitions=".85*, .15*"
+      Padding="10"
+      RowSpacing="10"
+      ColumnSpacing="10">
+
+        <BoxView Grid.Row="0" 
+                 Grid.ColumnSpan="2" 
+                 BackgroundColor="Orange" />
+        
+        <Label Grid.Row="0"
+               Grid.ColumnSpan="2"
+               Text="SO LIST"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="24"/>
+
+        <Label Text="SO Pick"
+               Grid.Row="1"
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontSize="13" />
+
+        <Entry Placeholder="Enter Task"
+               Grid.Row="2"
+               Grid.Column="0"
+               Grid.ColumnSpan="1"
+               HorizontalOptions="FillAndExpand" />
+
+        <Button Text="Download"
+                Grid.Row="2"
+                Grid.Column="1"
+                CornerRadius="25"
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                BackgroundColor="orange"
+                TextColor="Black"/>
+
+        <CollectionView Grid.Row="3" 
+                    Grid.ColumnSpan="2" 
+                    
+                    SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type x:String}">
+                    <!--<SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Delete"
+                                       BackgroundColor="red"
+                                       Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ManViewModel}}, Path=DeleteCommand}"
+                                       CommandParameter="{Binding .}"/>
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Grid Padding="0,5">
+                            <Frame>
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ManViewModel}}, Path=TapCommand}"
+                                    CommandParameter="{Binding .}"/>
+
+                                </Frame.GestureRecognizers>
+                                <Label Text="{Binding .}"
+                                    FontSize="24"/>
+                            </Frame>
+                        </Grid>
+                    </SwipeView>-->
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+</ContentPage>

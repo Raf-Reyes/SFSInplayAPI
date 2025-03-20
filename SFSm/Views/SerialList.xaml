@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SFSm.Views.SerialList"
+             x:Name="serialListPage"
+             Title="SerialList">
+
+    <StackLayout Padding="10">
+        <Label Text="Serial Numbers" FontSize="20" FontAttributes="Bold" />
+
+        <CollectionView SelectionMode="Single" ItemsSource="{Binding SerialNumbers}" Margin="5">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Remove" BackgroundColor="Red"
+                                           Command="{Binding Source={x:Reference serialListPage}, Path=RemoveCommand}"
+                                           CommandParameter="{Binding .}" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        <Border Padding="10" Margin="5" StrokeShape="RoundRectangle 10,10,10,10" BackgroundColor="LightGray">
+                            <Label Text="{Binding .}" FontSize="16"/>
+                        </Border>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="Save" Clicked="OnSaveClicked" Margin="10" BackgroundColor="#05376C" TextColor="White"/>
+    </StackLayout>
+</ContentPage>

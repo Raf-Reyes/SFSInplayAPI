@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cm="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
+             x:Class="SFSm.Views.SODetailsPage">
+    
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="10">
+        <!-- Header Section in Row 0 -->
+        <Frame Grid.Row="0" BackgroundColor="#05376C" Padding="10" CornerRadius="5" HeightRequest="120" Margin="0,0,0,10">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RowDefinitions="Auto,Auto">
+                <Label Text="{Binding Tseqno, StringFormat='SO No: {0}'}"
+                       FontSize="40"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="0"/>
+
+                <Label Text="{Binding Customer}"
+                       FontSize="15"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="1"/>
+            </Grid>
+        </Frame>
+
+        <!-- Label in Row 1 -->
+        <Label Grid.Row="1" Text="Item List"
+               Padding="10,0,0,0"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontSize="13"
+               TextColor="Gray"/>
+
+        <!-- CollectionView in Row 2 (Scrollable) -->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding SOList}" SelectionMode="Single" >
+            <CollectionView.EmptyView>
+                <Label Text="No Records Found"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Gray"
+                       FontSize="16" />
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Remove" BackgroundColor="Red" Invoked="SwipeItem_Invoked" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+                        
+                        <StackLayout Padding="10" Spacing="10" Margin="0,5">
+                            <StackLayout.GestureRecognizers>
+                                <!--<TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>-->
+                                <!--<TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnItemDoubleTapped"/>-->
+                                <!--<TapGestureRecognizer NumberOfTapsRequired="3" Tapped="OnItemTrippedTapped"/>-->
+                                <TapGestureRecognizer Tapped="OnItemTapped" NumberOfTapsRequired="1"/>
+                            </StackLayout.GestureRecognizers>
+                            <Border BackgroundColor="{Binding BGColor}" StrokeThickness="1" Padding="10" StrokeShape="RoundRectangle 10,10,10,10">
+                                <StackLayout Spacing="5">
+                                    <!-- Main Row -->
+                                    <VerticalStackLayout Spacing="10">
+                                        <Label Text="{Binding Desc}"
+                                               FontSize="16"
+                                               FontAttributes="Bold"
+                                               TextColor="Black"
+                                               HorizontalOptions="FillAndExpand"
+                                               LineBreakMode="WordWrap"/>
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Qty, StringFormat='({0:F2})'}"
+                                                    FontSize="14"
+                                                    TextColor="Black"/>
+                                            <Label Text="{Binding Barcode}"
+                                                   FontSize="16"
+                                                   FontAttributes="Bold"
+                                                   TextColor="Black"
+                                                   IsVisible="False"/>
+                                        </HorizontalStackLayout>
+                                    </VerticalStackLayout>
+
+                                    <!-- Hidden Row (Initially Collapsed) -->
+                                    <StackLayout IsVisible="{Binding IsExpanded}">
+                                        <Label Text="Pick List"
+                                                    FontSize="14"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Blue"
+                                                    Padding="0,10,0,10"/>
+
+                                        <Label Text="{Binding EnteredSerial}"
+                                               FontSize="14"
+                                               TextColor="Black"
+                                               Padding="10,0,0,0"/>
+                                    </StackLayout>
+
+                                    <StackLayout.Triggers>
+                                        <DataTrigger TargetType="StackLayout"
+                                                     Binding="{Binding EnteredSerial}"
+                                                     Value="{Binding Qty}">
+                                            <Setter Property="BackgroundColor" Value="Green"/>
+                                        </DataTrigger>
+                                    </StackLayout.Triggers>
+
+                                </StackLayout>
+                            </Border>
+                        </StackLayout>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Spacer at the Bottom of the CollectionView -->
+        <Frame Grid.Row="3" HeightRequest="20" BackgroundColor="Transparent"/>
+
+        <!-- Last Frame with Entry and Button in Row 3 -->
+        <Frame Grid.Row="4" Padding="10" BackgroundColor="#F0F0F0" HeightRequest="60">
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Entry Grid.Column="0" Placeholder="Enter Serial Number" x:Name="myEntry"
+                       Completed="Entry_Completed"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"/>
+
+                <Button Grid.Column="1" Text="Save"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        Clicked="Button_Clicked"/>
+            </Grid>
+        </Frame>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SFSm.Views.SOPickPage"
+             xmlns:Views="clr-namespace:SFSm.Views"
+             Title="">
+
+    <!-- Root AbsoluteLayout -->
+    <AbsoluteLayout>
+
+        <!-- Main Grid -->
+        <Grid AbsoluteLayout.LayoutBounds="0,0,1,1"
+              AbsoluteLayout.LayoutFlags="All"
+              RowDefinitions="100, Auto, *"
+              Padding="10"
+              RowSpacing="10"
+              ColumnSpacing="10">
+
+            <!-- Top Bar -->
+            <BoxView Grid.Row="0" 
+                     BackgroundColor="#05376C" CornerRadius="5" />
+
+            <Label Grid.Row="0"
+                   Text="Pick Serial Number"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="24"
+                   TextColor="white"/>
+
+            <!-- So Number List Label -->
+            <Label Text="So Number List"
+                   Grid.Row="1"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   FontSize="13"
+                   TextColor="gray"/>
+
+            <!-- Collection View -->
+            <CollectionView Grid.Row="2" ItemsSource="{Binding SOList}" SelectionMode="Single" >
+                <CollectionView.EmptyView>
+                    <Label Text="No Records Found" 
+                           HorizontalOptions="Center" 
+                           VerticalOptions="Center" 
+                           TextColor="Gray" 
+                           FontSize="16" />
+
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Remove" BackgroundColor="Red" Invoked="SwipeItem_Invoked" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <StackLayout>
+                                <!-- Tap Gesture for Item Tapping -->
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                                </StackLayout.GestureRecognizers>
+
+                                <Border BackgroundColor="LightGray" 
+                                            StrokeThickness="1"
+                                            StrokeShape="RoundRectangle 10,10,10,10"
+                                            Margin="5">
+                                    <Grid Padding="10" ColumnSpacing="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+
+                                        <!-- First label (Top-Left) -->
+                                        <Label Text="{Binding Tseqno, StringFormat='SO No: {0}'}"
+                                                   FontSize="14"
+                                                   VerticalOptions="Center"
+                                                   Grid.Row="0"
+                                                   Grid.Column="0" />
+
+                                        <!-- Second label (Top-Right) -->
+                                        <Label Text="{Binding Customer, StringFormat='Customer: {0}'}"
+                                                   FontSize="14"
+                                                   VerticalOptions="Center"
+                                                   HorizontalOptions="Start"
+                                                   Grid.Row="0"
+                                                   Grid.Column="1" />
+
+                                        <!-- Third label (Bottom-Left) -->
+                                        <Label Text="{Binding Pono, StringFormat='PO No: {0}'}"
+                                                   FontSize="14"
+                                                   VerticalOptions="Center"
+                                                   Grid.Row="1"
+                                                   Grid.Column="0" />
+
+                                        <!-- Fourth label (Bottom-Right) -->
+                                        <Label Text="{Binding Remarks, StringFormat='Remarks: {0}'}"
+                                                   FontSize="14"
+                                                   VerticalOptions="Center"
+                                                   HorizontalOptions="Start"
+                                                   Grid.Row="1"
+                                                   Grid.Column="1" />
+                                    </Grid>
+                                </Border>
+                            </StackLayout>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <!-- Floating ImageButton -->
+        <!--<ImageButton Source="refresh.png"
+                     BackgroundColor="#05376C"
+                     WidthRequest="60"
+                     HeightRequest="60"
+                     Padding="10"
+                     CornerRadius="30"
+                     BorderWidth="2"
+                     AbsoluteLayout.LayoutBounds="1,1,70,60"
+                     AbsoluteLayout.LayoutFlags="PositionProportional" />-->
+    </AbsoluteLayout>
+</ContentPage>

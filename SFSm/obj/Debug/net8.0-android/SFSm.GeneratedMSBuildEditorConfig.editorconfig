@@ -1,0 +1,112 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = false
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SFSm
+build_property.ProjectDir = C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/CameraPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.CameraPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CameraPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CameraPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DashboardPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/PickDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.PickDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PickDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PickDetailsPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/SerialList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.SerialList.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SerialList.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SerialList.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/SODetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.SODetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SODetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SODetailsPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/SODownloadPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.SODownloadPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SODownloadPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SODownloadPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/SOPickListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.SOPickListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SOPickListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SOPickListPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/SOPickPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.SOPickPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SOPickPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SOPickPage.xaml
+
+[C:/Users/Rafael/source/repos/SFSm(Main)/SFSm/Views/SOReleasePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SFSm.Views.SOReleasePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SOReleasePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SOReleasePage.xaml

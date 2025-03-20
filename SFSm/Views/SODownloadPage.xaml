@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SFSm.Views.SODownloadPage"
+             Title="">
+
+    <Grid RowDefinitions="100, Auto, Auto, Auto, *"
+          ColumnDefinitions=".7*, .15*, .15*"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10">
+
+        <BoxView Grid.Row="0" 
+             Grid.ColumnSpan="3" 
+             BackgroundColor="#05376C" CornerRadius="5" />
+
+        <Label Grid.Row="0"
+           Grid.ColumnSpan="3"
+           Text="Download SO for Picking"
+           FontAttributes="Bold"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           FontSize="24"
+           TextColor="white"/>
+
+        <Label Text="So Number"
+           Grid.Row="1"
+           Grid.ColumnSpan="3"
+           HorizontalOptions="Start"
+           VerticalOptions="Center"
+           FontSize="13"
+           TextColor="gray"/>
+
+        <Entry Placeholder="Enter SO Number"
+           Keyboard="Numeric"
+           Grid.Row="2"
+           Grid.Column="0"
+           Grid.ColumnSpan="1"
+           HorizontalOptions="FillAndExpand"
+           Completed="Entry_Completed"/>
+
+        <ImageButton
+            Grid.Row="2"
+            Grid.Column="2"
+            Command="{Binding DownloadCommand}"
+            Source="download.png"
+            Aspect="AspectFit"
+            BackgroundColor="#05376C"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            WidthRequest="50"
+            HeightRequest="50"
+            Padding="0,5,0,10"
+            CornerRadius="50"/>
+
+        <ImageButton
+            Grid.Row="2"
+            Grid.Column="1"
+            Command="{Binding RefreshCommand}"
+            Source="refresh.png"
+            Aspect="AspectFit"
+            BackgroundColor="#05376C"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            WidthRequest="50"
+            HeightRequest="50"
+            Padding="10"
+            CornerRadius="50"/>
+
+        <Label Grid.Row="3"
+           Grid.ColumnSpan="3"
+           Text="SO Records"
+           FontAttributes="Bold"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           FontSize="16"
+           TextColor="black"/>
+
+        <CollectionView Grid.Row="4" Grid.ColumnSpan="3" ItemsSource="{Binding EnteredSOList}">
+            <CollectionView.EmptyView>
+                <Label Text="No Records Found" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Gray" FontSize="16" />
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Remove" 
+                                           BackgroundColor="Red"
+                                           Command="{Binding BindingContext.RemoveItemCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}"
+                                           CommandParameter="{Binding .}"/>
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+
+                        <StackLayout>
+                            <Border BackgroundColor="LightGray" 
+                                    StrokeThickness="1"
+                                    StrokeShape="RoundRectangle 10,10,10,10"
+                                    Margin="5"
+                                    Padding="10">
+                                <Label Text="{Binding .}" 
+                                       FontSize="14"
+                                       VerticalOptions="Center"
+                                       />
+                            </Border>
+                        </StackLayout>
+
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+
+        <ContentView IsVisible="{Binding IsLoading}" 
+             BackgroundColor="Black" 
+             Opacity="0.8"
+             Grid.RowSpan="5"
+             Grid.ColumnSpan="3">
+
+            <StackLayout VerticalOptions="Center" 
+                 HorizontalOptions="Center"
+                 Spacing="10">
+
+                <ActivityIndicator IsRunning="{Binding IsLoading}" 
+                           Color="White"
+                           WidthRequest="50" 
+                           HeightRequest="50" />
+
+                <Label Text="{Binding LoadingMessage}" 
+               TextColor="White" 
+               FontSize="18"
+               HorizontalOptions="Center" />
+            </StackLayout>
+        </ContentView>
+
+
+    </Grid>
+
+</ContentPage>
