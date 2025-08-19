@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SFSm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.4.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.4+e923f6bbb5d80630096ede2735b5548ddb7d6f17")]
 [assembly: System.Reflection.AssemblyProductAttribute("SFSm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SFSm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.4.0")]

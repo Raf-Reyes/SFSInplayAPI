@@ -8,7 +8,7 @@
     <StackLayout Padding="10">
         <Label Text="Serial Numbers" FontSize="20" FontAttributes="Bold" />
 
-        <CollectionView SelectionMode="Single" ItemsSource="{Binding SerialNumbers}" Margin="5">
+        <CollectionView VerticalOptions="FillAndExpand" SelectionMode="Single" ItemsSource="{Binding SerialNumbers}" Margin="5">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <SwipeView>

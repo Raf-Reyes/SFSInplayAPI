@@ -970,3 +970,4 @@ C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-android\stamp\_C
 C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-android\SFSm.sourcelink.json

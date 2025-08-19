@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\views\\seriallist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\views\\seriallist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\views\\loginpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\views\\loginpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\views\\sodetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\views\\sodetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\sfsm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\sfsm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\services\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\services\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\sfsm.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\sfsm.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|c:\\users\\rafael\\source\\repos\\sfsm(main)\\sfsm\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46722900-C37D-46FD-A15A-F1B991BDBBC7}|SFSm\\SFSm.csproj|solutionrelative:sfsm\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,67 +57,111 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{7d1a5679-04f2-3f4a-851f-855baa54731c}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "SFSm\\Views\\LoginPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\LoginPage.xaml.cs",
-              "RelativeToolTip": "SFSm\\Views\\LoginPage.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T07:13:02.278Z",
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\MainPage.xaml",
+              "RelativeDocumentMoniker": "SFSm\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\MainPage.xaml",
+              "RelativeToolTip": "SFSm\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-20T04:08:23.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "SFSm\\Views\\LoginPage.xaml",
-              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\LoginPage.xaml",
-              "RelativeToolTip": "SFSm\\Views\\LoginPage.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAA5AAAAAAAAAA==",
+              "Title": "SODetailsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\SODetailsPage.xaml",
+              "RelativeDocumentMoniker": "SFSm\\Views\\SODetailsPage.xaml",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\SODetailsPage.xaml",
+              "RelativeToolTip": "SFSm\\Views\\SODetailsPage.xaml",
+              "ViewState": "AgIAACIAAAAAAAAAAAASwCMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-20T07:12:04.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SFSm",
-              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\SFSm.csproj",
-              "RelativeDocumentMoniker": "SFSm\\SFSm.csproj",
-              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\SFSm.csproj",
-              "RelativeToolTip": "SFSm\\SFSm.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-21T06:46:24.393Z",
+              "WhenOpened": "2025-05-20T04:06:54.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\ViewModels\\LoginPageViewModel.cs",
-              "RelativeDocumentMoniker": "SFSm\\ViewModels\\LoginPageViewModel.cs",
-              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\ViewModels\\LoginPageViewModel.cs",
-              "RelativeToolTip": "SFSm\\ViewModels\\LoginPageViewModel.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAkwFIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T06:19:13.736Z",
+              "Title": "SerialList.xaml",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\SerialList.xaml",
+              "RelativeDocumentMoniker": "SFSm\\Views\\SerialList.xaml",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\SerialList.xaml",
+              "RelativeToolTip": "SFSm\\Views\\SerialList.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-20T04:04:11.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Services\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "SFSm\\Services\\DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Services\\DatabaseHelper.cs",
-              "RelativeToolTip": "SFSm\\Services\\DatabaseHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Title": "SFSm.csproj",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\SFSm.csproj",
+              "RelativeDocumentMoniker": "SFSm\\SFSm.csproj",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\SFSm.csproj",
+              "RelativeToolTip": "SFSm\\SFSm.csproj",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-07T00:47:45.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\ViewModels\\LoginPageViewModel.cs",
+              "RelativeDocumentMoniker": "SFSm\\ViewModels\\LoginPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\ViewModels\\LoginPageViewModel.cs",
+              "RelativeToolTip": "SFSm\\ViewModels\\LoginPageViewModel.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T06:13:46.354Z",
+              "WhenOpened": "2025-03-31T07:19:39.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "SFSm\\Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\Views\\LoginPage.xaml",
+              "RelativeToolTip": "SFSm\\Views\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-31T07:19:25.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "SFSm\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\AppShell.xaml.cs",
+              "RelativeToolTip": "SFSm\\AppShell.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T06:48:14.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\AppShell.xaml",
+              "RelativeDocumentMoniker": "SFSm\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\Rafael\\source\\repos\\SFSm(Main)\\SFSm\\AppShell.xaml",
+              "RelativeToolTip": "SFSm\\AppShell.xaml",
+              "ViewState": "AgIAADYAAAAAAAAAAIBJwEcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-31T06:46:16.797Z",
               "EditorCaption": ""
             }
           ]

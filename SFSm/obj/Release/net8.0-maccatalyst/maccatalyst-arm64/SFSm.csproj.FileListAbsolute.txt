@@ -674,3 +674,4 @@ C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-maccatalyst\macc
 C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-maccatalyst\maccatalyst-arm64\SFSm.pdb
 C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-maccatalyst\maccatalyst-arm64\SFSm.genruntimeconfig.cache
 C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-maccatalyst\maccatalyst-arm64\ref\SFSm.dll
+C:\Users\Rafael\source\repos\SFSm(Main)\SFSm\obj\Release\net8.0-maccatalyst\maccatalyst-arm64\SFSm.sourcelink.json
